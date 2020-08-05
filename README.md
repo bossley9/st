@@ -54,3 +54,6 @@ patch --merge -i patchName.diff
 Below is a list of popular patches I have included in my st build.
 
 - [alpha 0.8.2](https://st.suckless.org/patches/alpha)
+- [scrollback 20200419-72e3f6c](https://st.suckless.org/patches/scrollback)
+- [scrollback-mouse 20191024-a2c479c](https://st.suckless.org/patches/scrollback)
+- [scrollback-mouse-altscreen 20200416-5703aa0](https://st.suckless.org/patches/scrollback)

@@ -44,4 +44,13 @@ For more information on configuration, Suckless tools, and how st works,
 read [the readme](https://git.suckless.org/st/file/README.html).
 
 ## Patches <a name="patches"></a>
-Below is a list of popular patches I have included in my dwm build.
+To apply patches to suckless tools, download patches from the suckless website (or make your
+own) and run the following command, making sure to specify the file being changed as 
+`template.config.h` instead of the standard `config.def.h`.
+```
+patch --merge -i patchName.diff
+```
+
+Below is a list of popular patches I have included in my st build.
+
+- [alpha 0.8.2](https://st.suckless.org/patches/alpha)

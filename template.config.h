@@ -99,24 +99,24 @@ float alpha = $WM_TRANSPARENCY;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"$C_BLACK_0",
+	"$C_RED_0",
+	"$C_GREEN_0",
+	"$C_YELLOW_0",
+	"$C_BLUE_0",
+	"$C_MAGENTA_0",
+	"$C_CYAN_0",
+	"$C_GRAY_0",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"$C_BLACK_1",
+	"$C_RED_1",
+	"$C_GREEN_1",
+	"$C_YELLOW_1",
+	"$C_BLUE_1",
+	"$C_MAGENTA_1",
+	"$C_CYAN_1",
+	"$C_GRAY_1",
 
 	[255] = 0,
 
@@ -132,7 +132,7 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 7;
-unsigned int defaultbg = 258;
+unsigned int defaultbg = 0;
 static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 

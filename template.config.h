@@ -104,7 +104,7 @@ static const char *colorname[] = {
 	"$C_GREEN_0",
 	"$C_YELLOW_0",
 	"$C_BLUE_0",
-	"$C_MAGENTA_0",
+	"$C_MAGENTA_1",
 	"$C_CYAN_0",
 	"$C_GRAY_0",
 

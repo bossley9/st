@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro Medium:pixelsize=15:antialias=true:autohint=true";
+static char *font = "$FONT";
 static int borderpx = $WM_GAPS;
 
 /*

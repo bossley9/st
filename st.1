@@ -13,7 +13,11 @@ st \- simple terminal
 .RB [ \-f
 .IR font ]
 .RB [ \-g
-.IR geometry ]
+.IR geometry
+.IR [rows/cols] ]
+.RB [ \-G
+.IR geometry
+.IR [pixels] ]
 .RB [ \-i ]
 .RB [ \-l
 .IR line
@@ -57,6 +61,12 @@ to use when st is run.
 .BI \-g " geometry"
 defines the X11 geometry string.
 The form is [=][<cols>{xX}<rows>][{+-}<xoffset>{+-}<yoffset>]. See
+.BR XParseGeometry (3)
+for further details.
+.TP
+.BI \-G " geometry"
+defines the X11 geometry string.
+The form is [=][<width>{xX}<height>][{+-}<xoffset>{+-}<yoffset>]. See
 .BR XParseGeometry (3)
 for further details.
 .TP

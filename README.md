@@ -66,3 +66,4 @@ I have included in my st build.
 - [scrollback-mouse 20191024-a2c479c](https://st.suckless.org/patches/scrollback)
 - [scrollback-mouse-altscreen 20200416-5703aa0](https://st.suckless.org/patches/scrollback)
 - [colors-at-launch 0.8.4](https://st.suckless.org/patches/colors_at_launch)
+- [any-geometry 0.8.1](https://st.suckless.org/patches/anygeometry)

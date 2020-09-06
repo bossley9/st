@@ -3,13 +3,21 @@
 st \- simple terminal
 .SH SYNOPSIS
 .B st
-.RB [ \-aiv ]
+.RB [ \-a ]
+.RB [ \-A
+.IR transparency ]
 .RB [ \-c
 .IR class ]
+.RB [ \-C 
+.IR color@colorNum ]
 .RB [ \-f
 .IR font ]
 .RB [ \-g
 .IR geometry ]
+.RB [ \-i ]
+.RB [ \-l
+.IR line
+.RI [ stty_args ...] ]
 .RB [ \-n
 .IR name ]
 .RB [ \-o
@@ -18,35 +26,12 @@ st \- simple terminal
 .IR title ]
 .RB [ \-t
 .IR title ]
-.RB [ \-l
-.IR line ]
+.RB [ \-v ]
 .RB [ \-w
 .IR windowid ]
 .RB [[ \-e ]
 .IR command
 .RI [ arguments ...]]
-.PP
-.B st
-.RB [ \-aiv ]
-.RB [ \-c
-.IR class ]
-.RB [ \-f
-.IR font ]
-.RB [ \-g
-.IR geometry ]
-.RB [ \-n
-.IR name ]
-.RB [ \-o
-.IR iofile ]
-.RB [ \-T
-.IR title ]
-.RB [ \-t
-.IR title ]
-.RB [ \-w
-.IR windowid ]
-.RB \-l
-.IR line
-.RI [ stty_args ...]
 .SH DESCRIPTION
 .B st
 is a simple terminal emulator.
@@ -54,9 +39,15 @@ is a simple terminal emulator.
 .TP
 .B \-a
 disable alternate screens in terminal
+.BI \-A " transparency"
+defines a custom window transparency between 0 and 1. Requires a compositor.
 .TP
 .BI \-c " class"
 defines the window class (default $TERM).
+.TP
+.BI \-C " color@colorNum"
+defines a custom color value on launch. The form is [color@colorNum].
+For example, -C "#fff@0" will set colorname[0] to "#fff". 
 .TP
 .BI \-f " font"
 defines the
@@ -71,25 +62,6 @@ for further details.
 .TP
 .B \-i
 will fixate the position given with the -g option.
-.TP
-.BI \-n " name"
-defines the window instance name (default $TERM).
-.TP
-.BI \-o " iofile"
-writes all the I/O to
-.I iofile.
-This feature is useful when recording st sessions. A value of "-" means
-standard output.
-.TP
-.BI \-T " title"
-defines the window title (default 'st').
-.TP
-.BI \-t " title"
-defines the window title (default 'st').
-.TP
-.BI \-w " windowid"
-embeds st within the window identified by
-.I windowid
 .TP
 .BI \-l " line"
 use a tty
@@ -110,6 +82,25 @@ flags. If you want to set odd parity on 115200 baud use for example 'st -l
 example 'st -l /dev/ttyS0 cs7 115200'. See
 .BR stty(1)
 for more arguments and cases.
+.TP
+.BI \-n " name"
+defines the window instance name (default $TERM).
+.TP
+.BI \-o " iofile"
+writes all the I/O to
+.I iofile.
+This feature is useful when recording st sessions. A value of "-" means
+standard output.
+.TP
+.BI \-T " title"
+defines the window title (default 'st').
+.TP
+.BI \-t " title"
+defines the window title (default 'st').
+.TP
+.BI \-w " windowid"
+embeds st within the window identified by
+.I windowid
 .TP
 .B \-v
 prints version information to stderr, then exits.
@@ -172,7 +163,7 @@ code. This fork allows users to insert environment variables in a
 template.config.h and (re)compile the source with inputted variables. This 
 keeps it fast, secure and simple.
 .SH AUTHORS
-See the LICENSE.md file for the authors.
+This fork of suckless st was created by Sam Bossley. See the LICENSE.md file for the original authors.
 .SH LICENSE
 See the LICENSE.md file for the terms of redistribution.
 .SH SEE ALSO

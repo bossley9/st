@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "$FONT";
-static int borderpx = $WM_GAPS;
+static char *font = "$ST_FONT";
+static int borderpx = $W_GAPS;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -94,7 +94,7 @@ char *termname = "st";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = $WM_TRANSPARENCY;
+float alpha = $W_ALPHA;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {

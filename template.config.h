@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "$ST_FONT";
-static int borderpx = $W_GAPS;
+static int borderpx = $ST_PADDING;
 
 /*
  * What program is execed by st depends of these precedence rules:

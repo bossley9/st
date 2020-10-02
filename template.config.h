@@ -101,16 +101,16 @@ static const char *colorname[] = {
     /* 8 normal colors */
     "$C_BLACK_0",
     "$C_RED_0",
-    "$C_GREEN_1",
+    "$C_GREEN_0",
     "$C_YELLOW_0",
     "$C_BLUE_0",
-    "$C_MAGENTA_1",
+    "$C_MAGENTA_0",
     "$C_CYAN_0",
     "$C_GRAY_0",
 
     /* 8 bright colors */
     "$C_BLACK_1",
-    "$C_RED_0",
+    "$C_RED_1",
     "$C_GREEN_1",
     "$C_YELLOW_1",
     "$C_BLUE_1",

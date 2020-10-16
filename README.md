@@ -67,3 +67,4 @@ I have included in my st build.
 - [scrollback-mouse-altscreen 20200416-5703aa0](https://st.suckless.org/patches/scrollback)
 - [colors-at-launch 0.8.4](https://st.suckless.org/patches/colors_at_launch)
 - [any-geometry 0.8.1](https://st.suckless.org/patches/anygeometry)
+- [Xresources 20200604-9ba7ecf](https://st.suckless.org/patches/xresources)

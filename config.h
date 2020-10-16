@@ -99,24 +99,24 @@ float alpha = 1;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    "#c6c1aa",
-    "#a54242",
-    "#8c9440",
-    "#de935f",
-    "#5f819d",
-    "#85678f",
-    "#5e8d87",
-    "#47443c",
+    /* "#c6c1aa", */
+    /* "#a54242", */
+    /* "#8c9440", */
+    /* "#de935f", */
+    /* "#5f819d", */
+    /* "#85678f", */
+    /* "#5e8d87", */
+    /* "#47443c", */
 
     /* 8 bright colors */
-    "#b0ab97",
-    "#cc6666",
-    "#8c9440",
-    "#f0c674",
-    "#81a2be",
-    "#b294bb",
-    "#5e8d87",
-    "#636155",
+    /* "#b0ab97", */
+    /* "#cc6666", */
+    /* "#8c9440", */
+    /* "#f0c674", */
+    /* "#81a2be", */
+    /* "#b294bb", */
+    /* "#5e8d87", */
+    /* "#636155", */
 
     [255] = 0,
 
@@ -168,8 +168,8 @@ static unsigned int height = 364;
  * Default colour and shape of the mouse cursor
  */
 static unsigned int mouseshape = XC_xterm;
-static unsigned int mousefg = 20;
-static unsigned int mousebg = 20;
+static unsigned int mousefg = 7;
+static unsigned int mousebg = 0;
 
 /*
  * Color used to display font attributes when fontconfig selected a font which
@@ -183,6 +183,42 @@ static unsigned int defaultattr = 11;
  * modifier, set to 0 to not use it.
  */
 static uint forcemousemod = ShiftMask;
+
+/*
+ * Xresources preferences to load at startup
+ */
+ResourcePref resources[] = {
+    {"font", STRING, &font},
+    {"color0", STRING, &colorname[0]},
+    {"color1", STRING, &colorname[1]},
+    {"color2", STRING, &colorname[2]},
+    {"color3", STRING, &colorname[3]},
+    {"color4", STRING, &colorname[4]},
+    {"color5", STRING, &colorname[5]},
+    {"color6", STRING, &colorname[6]},
+    {"color7", STRING, &colorname[7]},
+    {"color8", STRING, &colorname[8]},
+    {"color9", STRING, &colorname[9]},
+    {"color10", STRING, &colorname[10]},
+    {"color11", STRING, &colorname[11]},
+    {"color12", STRING, &colorname[12]},
+    {"color13", STRING, &colorname[13]},
+    {"color14", STRING, &colorname[14]},
+    {"color15", STRING, &colorname[15]},
+    {"background", STRING, &colorname[256]},
+    {"foreground", STRING, &colorname[257]},
+    {"cursorColor", STRING, &colorname[258]},
+    {"termname", STRING, &termname},
+    {"shell", STRING, &shell},
+    {"minlatency", INTEGER, &minlatency},
+    {"maxlatency", INTEGER, &maxlatency},
+    {"blinktimeout", INTEGER, &blinktimeout},
+    {"bellvolume", INTEGER, &bellvolume},
+    {"tabspaces", INTEGER, &tabspaces},
+    {"borderpx", INTEGER, &borderpx},
+    {"cwscale", FLOAT, &cwscale},
+    {"chscale", FLOAT, &chscale},
+};
 
 /*
  * Internal mouse shortcuts.

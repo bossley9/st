@@ -99,24 +99,24 @@ float alpha = 1;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    "#171520",
-    "#c83d65",
-    "#729a50",
-    "#e7852e",
-    "#519aba",
-    "#7d45aa",
-    "#519aba",
-    "#b3b7bf",
+    "#c6c1aa",
+    "#a54242",
+    "#8c9440",
+    "#de935f",
+    "#5f819d",
+    "#85678f",
+    "#5e8d87",
+    "#47443c",
 
     /* 8 bright colors */
-    "#2e2d38",
-    "#c83d65",
-    "#729a50",
-    "#f1c944",
-    "#4079b7",
-    "#a074c4",
-    "#8dc9e4",
-    "#eceff4",
+    "#b0ab97",
+    "#cc6666",
+    "#8c9440",
+    "#f0c674",
+    "#81a2be",
+    "#b294bb",
+    "#5e8d87",
+    "#636155",
 
     [255] = 0,
 
@@ -168,8 +168,8 @@ static unsigned int height = 364;
  * Default colour and shape of the mouse cursor
  */
 static unsigned int mouseshape = XC_xterm;
-static unsigned int mousefg = 7;
-static unsigned int mousebg = 0;
+static unsigned int mousefg = 20;
+static unsigned int mousebg = 20;
 
 /*
  * Color used to display font attributes when fontconfig selected a font which

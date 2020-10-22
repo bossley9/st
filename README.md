@@ -17,21 +17,14 @@ keybindings..._<br />_**no mouse required.**_
 4. [Patches](#patches)
 
 ## Installation <a name="installation"></a>
-In order to build st you need the `Xlib` header files.
+In order to build st you need the `Xlib` header files. For this specific fork of st, you
+will also need the `envsubst` utility in order to compile in template variables.
 
-This fork also makes use of the `envsubst` package to insert system environment variables
-into the configuation. The template file named is `template.config.h` for visibility. If you 
-are unable to use the `envsubst` package with your operating system or do not intend on 
-using this build of st with my dotfiles, I have also included a compiled version of the 
-configuration as `config.h`.
-
-Building with `envsubst`:
+As mentioned previously, this fork makes use of the `envsubst` package to insert system
+environment variables into the configuation. The template file named is `template.config.h`
+for visibility.
 
     envsubst < template.config.h > config.h
-    sudo make clean install
-
-Building without `envsubst`:
-
     sudo make clean install
 
 ## Running <a name="running"></a>

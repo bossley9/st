@@ -3,3 +3,4 @@ st
 patches/
 *.orig
 *.core
+config.h

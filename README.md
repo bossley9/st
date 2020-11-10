@@ -61,3 +61,4 @@ I have included in my st build.
 - [colors-at-launch 0.8.4](https://st.suckless.org/patches/colors_at_launch)
 - [any-geometry 0.8.1](https://st.suckless.org/patches/anygeometry)
 - [Xresources 20200604-9ba7ecf](https://st.suckless.org/patches/xresources)
+- [font2-20190416-ba72400](https://st.suckless.org/patches/font2)

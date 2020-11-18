@@ -4,3 +4,4 @@ patches/
 *.orig
 *.core
 config.h
+*.rej

@@ -6,6 +6,11 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "$ST_FONT";
+/* Spare fonts */
+static char *font2[] = {
+  "$ST_FONT_2",
+};
+
 static int borderpx = $ST_PADDING;
 
 /*

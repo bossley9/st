@@ -5,13 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "$ST_FONT";
+static char *font = "Source Code Pro:pixelsize=15:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-    "$ST_FONT_2",
+    "Automata:pixelsize=16",
 };
 
-static int borderpx = $ST_PADDING;
+static int borderpx = 30;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -21,6 +21,7 @@ static int borderpx = $ST_PADDING;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
+/* static char *shell = "/bin/sh"; */
 static char *shell = "usr/bin/env sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
@@ -88,7 +89,7 @@ char *termname = "st-256color";
  * the st.info and appropriately install the st.info in the environment where
  * you use this st version.
  *
- *	it#$tabspaces,
+ *	it#,
  *
  * Secondly make sure your kernel is not expanding tabs. When running `stty
  * -a` »tab0« should appear. You can tell the terminal to not expand tabs by
@@ -99,7 +100,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = $ST_ALPHA;
+float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
